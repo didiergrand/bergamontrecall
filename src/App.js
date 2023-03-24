@@ -42,7 +42,8 @@ function App() {
 
 
   const [imageUrl, setImageUrl] = useState('');
-  const endpoint = 'https://cms.scott-sports.com/scottwebservices/rest/asset';
+  const endpoint = 'https://cms.scott-sports-test.com/scottwebservices/rest/asset';
+
 
   const getProductImage = (event) => {
     axios.get(`${endpoint}/${selectedModel}/500`, {
