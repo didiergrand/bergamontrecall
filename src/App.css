@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@700&display=swap');
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', serif;
+}
+select, input{
+  font-family: 'Open Sans', sans-serif;
+}
+.recall-container{
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* form design */  
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #777;
+}
+input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+select{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+a{
+  color: #009fe1;
+  cursor: pointer;
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn,
+button{
+  min-width: 100px;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  background-color: #777;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+button:hover{
+  background-color: #333;
+  color: #fff;
+}
