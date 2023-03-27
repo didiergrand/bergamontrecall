@@ -43,11 +43,10 @@ function App() {
 
   const [imageUrl, setImageUrl] = useState('');
   const endpoint = 'https://cms.scott-sports-test.com/scottwebservices/rest/asset';
-  const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
 
   const getProductImage = (event) => {
-    axios.get(`${corsAnywhereUrl}${endpoint}/${selectedModel}/500`, {
+    axios.get(`${endpoint}/${selectedModel}/500`, {
       responseType: 'blob', // Spécifier le type de réponse en tant que blob (pour les images)
       auth: {
         username: "awswebservice_test",
