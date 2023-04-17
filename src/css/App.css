@@ -1,0 +1,47 @@
+
+
+.recall-container {
+  min-height: 500px;
+  text-align: center;
+}
+.recall-container .btn{
+  margin-right:10px;
+}
+
+.recall-container .recall_steps{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.recall-container .recall_step1 .btn{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.recall-container .recall_step4 .btn{
+  margin-bottom:10px;
+}
+.recall-container .recall_step5 .btn{
+  margin-bottom:40px;
+}
+.recall-container .recall_step2wo .form-inline{
+  margin-bottom:10px;
+}
+.recall-container .recall_step2wo label{
+  width: 30%;
+  padding-right: 10px;
+  margin-left: 20%;
+  text-align: left;
+}
+.recall-container .recall_step2wo select{
+  width: 30%;
+  margin-right: 20%;
+}
+.recall-container .recall_step2wo .btn{
+  margin-top:20px;
+}
+.recall-container .alert{
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 60%;
+  font-size: 12px;
+}
