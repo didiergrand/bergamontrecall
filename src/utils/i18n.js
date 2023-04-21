@@ -6,7 +6,6 @@ export function getTranslation(key, defaultValue = '') {
       const url = window.location.href;
       // get lang from url
       const urlLang = url.split("/")[4];
-      console.log(urlLang);
       let lang = "en";
       // set lang
       if(urlLang === "de" || urlLang === "fr" || urlLang === "it" || urlLang === "en" || urlLang === "es" || urlLang === "cs") {

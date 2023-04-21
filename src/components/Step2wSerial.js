@@ -15,7 +15,7 @@ const Step2wSerial = ({
           "Please enter your product's serial number:"
         )}
       </p>
-      <div class="form-inline">
+      <form className="form-inline">
         <input
           className="form-control"
           type="text"
@@ -31,7 +31,7 @@ const Step2wSerial = ({
         >
           {getTranslation("submit", "Submit")}
         </button>
-      </div>
+      </form>
       <br />
       <br />
       <a href="#back" onClick={() => handleBackButton()}>{getTranslation("back", "Back")}</a>

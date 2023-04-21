@@ -19,6 +19,11 @@
 .recall-container .recall_step4 .btn{
   margin-bottom:10px;
 }
+
+.recall-container .recall_step5 {
+  max-width: 600px;
+  margin: 0 auto;
+}
 .recall-container .recall_step5 .btn{
   margin-bottom:40px;
 }
@@ -26,14 +31,12 @@
   margin-bottom:10px;
 }
 .recall-container .recall_step2wo label{
-  width: 30%;
+  width: 100%;
   padding-right: 10px;
-  margin-left: 20%;
   text-align: left;
 }
 .recall-container .recall_step2wo select{
-  width: 30%;
-  margin-right: 20%;
+  width: 100%;
 }
 .recall-container .recall_step2wo .btn{
   margin-top:20px;
@@ -42,6 +45,48 @@
   margin:0 auto;
   margin-top: 20px;
   margin-bottom: 40px;
-  width: 60%;
   font-size: 12px;
+}
+@media (min-width: 768px) {
+  .recall-container .recall_step2wo label{
+    width: 30%;
+    margin-left: 20%;
+  }
+  .recall-container .recall_step2wo select{
+    width: 30%;
+    margin-right: 20%;
+  }
+  .recall-container .alert{
+    width: 60%;
+  }
+}
+.recall-container .btn-link{
+  font-family: "open-sans","Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  .recall-container .product-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.recall-container .product-data{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recall-container .product-data p{
+  margin: 0;
+}
+.recall-container .product-buttons{
+  margin-top: 20px;
+}
+.recall-container #contactModal .modal-dialog{
+  margin-top: 25%;
 }

@@ -1,209 +1,237 @@
-{ 
-    "titleStep1":{
-      "en": "Do you have the serial number of your Bergamont Grandurance RD or Sweep EQ Bike?",
-      "de": "Haben Sie die Seriennummer deines Bergamont Grandurance RD oder Sweep EQ Fahrrads?",
-      "fr": "Avez-vous le numéro de série de votre vélo Bergamont Grandurance RD ou Sweep EQ?",
-      "it": "Hai il numero di serie della tua bicicletta Bergamont Grandurance RD o Sweep EQ?",
-      "es": "¿Tiene el número de serie de su bicicleta Bergamont Grandurance RD o Sweep EQ?",
-      "pt": "Você tem o número de série da sua bicicleta Bergamont Grandurance RD ou Sweep EQ?",
-      "cs": "Máte sériové číslo vaší kola Bergamont Grandurance RD nebo Sweep EQ?"
-    },
-    "yes":{
-        "en": "Yes",
-        "de": "Ja",
-        "fr": "Oui",
-        "it": "Sì",
-        "es": "Sí",
-        "pt": "Sim",
-        "cs": "Ano"
-    },
-    "no":{
-        "en": "No",
-        "de": "Nein",
-        "fr": "Non",
-        "it": "No",
-        "es": "No",
-        "pt": "Não",
-        "cs": "Ne"
-    },
-    "submit":{
-        "en": "Submit",
-        "de": "Absenden",
-        "fr": "Soumettre",
-        "it": "Invia",
-        "es": "Enviar",
-        "pt": "Enviar",
-        "cs": "Odeslat"
-    },
-    "back":{
-        "en": "Back",
-        "de": "Zurück",
-        "fr": "Retour",
-        "it": "Indietro",
-        "es": "Espalda",
-        "pt": "Costas",
-        "cs": "Zpět"
-    },
-    "serialLocation":{
-        "en": "Where is my frame number located?",
-        "de": "Wo finde ich meine Rahmennummer?",
-        "fr": "Où se trouve mon numéro de cadre?",
-        "it": "Dove trovo il mio numero di telaio?",
-        "es": "¿Dónde está mi número de marco?",
-        "pt": "Onde está o meu número de quadro?",
-        "cs": "Kde se nachází můj rámový číslo?"
-    },
-    "notlisted":{
-        "en": "Bergamont Grandurance RD and Sweep EQ bike models that are not listed are not affected by the recall.",
-        "de": "Bergamont Grandurance RD und Sweep EQ Fahrradmodelle, die nicht aufgeführt sind, sind nicht von der Rückrufaktion betroffen.",
-        "fr": "Les modèles de vélos Bergamont Grandurance RD et Sweep EQ qui ne sont pas répertoriés ne sont pas concernés par le rappel.",
-        "it": "I modelli di biciclette Bergamont Grandurance RD e Sweep EQ che non sono elencati non sono interessati dal ritiro.",
-        "es": "Los modelos de bicicletas Bergamont Grandurance RD y Sweep EQ que no se enumeran no están afectados por la retirada.",
-        "pt": "Os modelos de bicicletas Bergamont Grandurance RD e Sweep EQ que não estão listados não são afetados pelo recall.",
-        "cs": "Modely kol Bergamont Grandurance RD a Sweep EQ, které nejsou uvedeny, nejsou dotčeny výměny."
-    },
-    "selectmodelyear":{
-        "en": "Please select your model year:",
-        "de": "Bitte wählen Sie das Jahr Ihres Modells:",
-        "fr": "Veuillez sélectionner l'année de votre modèle:",
-        "it": "Seleziona l'anno del tuo modello:",
-        "es": "Por favor, seleccione el año de su modelo:",
-        "pt": "Por favor, selecione o ano do seu modelo:",
-        "cs": "Vyberte rok svého modelu:"
-    },
-    "selectayear":{
-        "en": "Select a year",
-        "de": "Wähle ein Jahr",
-        "fr": "Sélectionnez une année",
-        "it": "Seleziona un anno",
-        "es": "Seleccione un año",
-        "pt": "Selecione um ano",
-        "cs": "Vyberte rok"
-    },
-    "productsmodel":{
-        "en": "Please select your product's model:",
-        "de": "Bitte wählen Sie das Modell Ihres Produkts:",
-        "fr": "Veuillez sélectionner le modèle de votre produit:",
-        "it": "Seleziona il modello del tuo prodotto:",
-        "es": "Por favor, seleccione el modelo de su producto:",
-        "pt": "Por favor, selecione o modelo do seu produto:",
-        "cs": "Vyberte model svého produktu:"
-    },
-    "selectamodel":{
-        "en": "Select a model",
-        "de": "Wähle ein Modell",
-        "fr": "Sélectionnez un modèle",
-        "it": "Seleziona un modello",
-        "es": "Seleccione un modelo",
-        "pt": "Selecione um modelo",
-        "cs": "Vyberte model"
-    },
-    "productserial":{
-        "en": "Please enter your product's serial number:",
-        "de": "Bitte geben Sie die Seriennummer Ihres Produkts ein:",
-        "fr": "Veuillez saisir le numéro de série de votre produit:",
-        "it": "Inserisci il numero di serie del tuo prodotto:",
-        "es": "Por favor, introduzca el número de serie de su producto:",
-        "pt": "Por favor, insira o número de série do seu produto:",
-        "cs": "Zadejte sériové číslo svého produktu:"
-    },
-    "productimage":{
-        "en": "Here is the image of your product:",
-        "de": "Hier ist das Bild Ihres Produkts:",
-        "fr": "Voici l'image de votre produit:",
-        "it": "Ecco l'immagine del tuo prodotto:",
-        "es": "Aquí está la imagen de su producto:",
-        "pt": "Aqui está a imagem do seu produto:",
-        "cs": "Zde je obrázek vašeho produktu:"
-    },
-    "isproduct":{
-        "en": "Is this your product?",
-        "de": "Ist das Ihr Produkt?",
-        "fr": "Est-ce votre produit?",
-        "it": "È questo il tuo prodotto?",
-        "es": "¿Es este su producto?",
-        "pt": "É este o seu produto?",
-        "cs": "Je to váš produkt?"
-    },
-    "describesyou":{
-        "en": "What best describes you?",
-        "de": "Was beschreibt dich am besten?",
-        "fr": "Qu'est-ce qui vous décrit le mieux?",
-        "it": "Cosa descrive meglio te?",
-        "es": "¿Qué te describe mejor?",
-        "pt": "O que melhor descreve você?",
-        "cs": "Co vám nejlépe popisuje?"
-    },
-    "purchasedproduct":{
-        "en": "I purchased the product in a store",
-        "de": "Ich habe das Produkt in einem Geschäft gekauft",
-        "fr": "J'ai acheté le produit dans un magasin",
-        "it": "Ho acquistato il prodotto in un negozio",
-        "es": "Compré el producto en una tienda",
-        "pt": "Eu comprei o produto em uma loja",
-        "cs": "Koupil jsem produkt v obchodě"
-    },
-    "productinstore":{
-        "en":"I have the recall product in my store",
-        "de":"Ich habe das zurückgerufene Produkt in meinem Geschäft",
-        "fr":"J'ai le produit rappelé dans mon magasin",
-        "it":"Ho il prodotto richiamato nel mio negozio",
-        "es":"Tengo el producto retirado en mi tienda",
-        "pt":"Eu tenho o produto recolhido na minha loja",
-        "cs":"Mám výrobek v obchodě"
-    },
-    "contactyourplace":{
-        "en":"Please contact your place of purchase as a first step or find a Bergamont dealer’s contact information. Any Bergamont dealer will handle your recall at his store free of cost.",
-        "de":"Bitte kontaktieren Sie als ersten Schritt Ihren Kaufort oder finden Sie die Kontaktinformationen eines Bergamont-Händlers. Jeder Bergamont-Händler wird Ihren Rückruf in seinem Geschäft kostenlos abwickeln.",
-        "fr":"Veuillez contacter votre lieu d'achat en premier lieu ou trouver les coordonnées d'un revendeur Bergamont. Tous les revendeurs Bergamont traiteront votre rappel dans leur magasin gratuitement.",
-        "it":"Contatta il tuo luogo di acquisto come primo passo o trova le informazioni di contatto di un rivenditore Bergamont. Qualsiasi rivenditore Bergamont gestirà il tuo ritiro nella sua attività gratuitamente.",
-        "es":"Por favor, contacte con su lugar de compra como primer paso o encuentre la información de contacto de un distribuidor Bergamont. Cualquier distribuidor Bergamont gestionará su retirada en su tienda sin coste alguno.",
-        "pt":"Por favor, entre em contato com o local de compra como primeiro passo ou encontre as informações de contato de um revendedor Bergamont. Qualquer revendedor Bergamont tratará o seu recall em sua loja sem custo.",
-        "cs":"Kontaktujte prosím místo nákupu jako první krok nebo najděte kontaktní informace prodejce Bergamont. Jakýkoli prodejce Bergamont zpracuje váš zpětný volání v jeho obchodě zdarma."
-    },
-    "pleasefill":{
-        "en":"If you have any questions, please fill out our contact form.",
-        "de":"Wenn Sie Fragen haben, füllen Sie bitte unser Kontaktformular aus.",
-        "fr":"Si vous avez des questions, veuillez remplir notre formulaire de contact.",
-        "it":"Se hai domande, compila il nostro modulo di contatto.",
-        "es":"Si tiene alguna pregunta, complete nuestro formulario de contacto.",
-        "pt":"Se você tiver alguma dúvida, preencha nosso formulário de contato.",
-        "cs":"Pokud máte nějaké dotazy, vyplňte prosím naši kontaktní formulář."
-    },
-    "contactform":{
-        "en":"Contact form",
-        "de":"Kontaktformular",
-        "fr":"Formulaire de contact",
-        "it":"Modulo di contatto",
-        "es":"Formulario de contacto",
-        "pt":"Formulário de contato",
-        "cs":"Kontaktní formulář"
-    },
-    "dealerprotection":{
-        "en":"Please visit the following address to register for the dealer protection program",
-        "de":"Bitte besuchen Sie die folgende Adresse, um sich für das Händler-Schutzprogramm zu registrieren",
-        "fr":"Veuillez visiter l'adresse suivante pour vous inscrire au programme de protection des revendeurs",
-        "it":"Visita l'indirizzo seguente per registrarti al programma di protezione del rivenditore",
-        "es":"Visite la siguiente dirección para registrarse en el programa de protección para distribuidores",
-        "pt":"Por favor, visite o seguinte endereço para se registrar no programa de proteção para revendedores",
-        "cs":"Navštivte prosím následující adresu pro registraci do programu ochrany prodejců"
-    },
-    "customerportallogin":{
-        "en":"Customer portal login",
-        "de":"Kundenportal-Login",
-        "fr":"Connexion au portail client",
-        "it":"Accesso al portale clienti",
-        "es":"Inicio de sesión en el portal del cliente",
-        "pt":"Login no portal do cliente",
-        "cs":"Přihlášení do portálu zákazníka"      
-    },
-    "findyourdealer":{
-        "en":"Find your dealer",
-        "de":"Finde deinen Händler",
-        "fr":"Trouvez votre revendeur",
-        "it":"Trova il tuo rivenditore",
-        "es":"Encuentra tu distribuidor",
-        "pt":"Encontre seu revendedor",
-        "cs":"Najděte svého prodejce"
-    }
-}
+
+        {
+            "titleStep1":{
+              "en":"Do you have the serial number of your Bergamont Grandurance RD or Sweep EQ Bike?",
+              "de":"Haben Sie die Seriennummer ihres Bergamont Grandurance RD oder Sweep EQ Fahrrads?",
+              "fr":"Avez-vous le numéro de série de votre vélo Bergamont Grandurance RD ou Sweep EQ?",
+              "it":"Hai il numero di serie della tua bicicletta Bergamont Grandurance RD o Sweep EQ?",
+              "es":"¿Tiene el número de serie de su bicicleta Bergamont Grandurance RD o Sweep EQ?",
+              "pt":"Tem o número de série da sua bicicleta Bergamont Grandurance RD ou Sweep EQ?",
+              "cs":"Máte sériové číslo vašeho kola Bergamont Grandurance RD nebo Sweep EQ?" 
+           },
+            "yes":{
+              "en":"Yes",
+              "de":"Ja",
+              "fr":"Oui",
+              "it":"Sì",
+              "es":"Sí",
+              "pt":"Sim",
+              "cs":"Ano" 
+           },
+            "no":{
+              "en":"No",
+              "de":"Nein",
+              "fr":"Non",
+              "it":"No",
+              "es":"No",
+              "pt":"Não",
+              "cs":"Ne" 
+           },
+            "submit":{
+              "en":"Submit",
+              "de":"Absenden",
+              "fr":"Soumettre",
+              "it":"Invia",
+              "es":"Enviar",
+              "pt":"Enviar",
+              "cs":"Potvrdit" 
+           },
+            "back":{
+              "en":"Back",
+              "de":"Zurück",
+              "fr":"Retour",
+              "it":"Indietro",
+              "es":"Espalda",
+              "pt":"Voltar",
+              "cs":"Zpět" 
+           },
+            "serialLocation":{
+              "en":"Where is my frame number located?",
+              "de":"Wo finde ich meine Rahmennummer?",
+              "fr":"Où se trouve mon numéro de cadre de vélo?",
+              "it":"Dove trovo il mio numero di telaio?",
+              "es":"¿Dónde está mi número de marco?",
+              "pt":"Onde está o número do quadro?",
+              "cs":"Kde se nachází moje číslo rámu?" 
+           },
+            "notlisted":{
+              "en":"Bergamont Grandurance RD and Sweep EQ bike models that are not listed are not affected by the recall.",
+              "de":"Bergamont Grandurance RD und Sweep EQ Fahrradmodelle, die hier nicht aufgeführt sind, sind nicht von der Rückrufaktion betroffen.",
+              "fr":"Les modèles de vélos Bergamont Grandurance RD et Sweep EQ qui ne sont pas répertoriés ne sont pas concernés par le rappel.",
+              "it":"I modelli di biciclette Bergamont Grandurance RD e Sweep EQ che non sono elencati non sono interessati dal richiamo.",
+              "es":"Los modelos de bicicletas Bergamont Grandurance RD y Sweep EQ que no se enumeran no están afectados por la retirada.",
+              "pt":"Os modelos de bicicletas Bergamont Grandurance RD e Sweep EQ que não estão listados não são afetados pelo recall.",
+              "cs":"Modely kol Bergamont Grandurance RD a Sweep EQ, kterých se netýká svolávavací akce." 
+           },
+            "selectmodelyear":{
+              "en":"Please select your model year:",
+              "de":"Bitte wählen Sie das Modelljahr:",
+              "fr":"Veuillez sélectionner l'année de votre modèle:",
+              "it":"Seleziona l'anno del tuo modello:",
+              "es":"Por favor, seleccione el año de su modelo:",
+              "pt":"Por favor, selecione o ano do seu modelo:",
+              "cs":"Vyberte svůj modelový rok:" 
+           },
+            "selectayear":{
+              "en":"Select a year",
+              "de":"Wählen Sie ein Jahr",
+              "fr":"Sélectionnez une année",
+              "it":"Seleziona un anno",
+              "es":"Seleccione un año",
+              "pt":"Selecione um ano",
+              "cs":"Vyberte rok" 
+           },
+            "productsmodel":{
+              "en":"Please select your model:",
+              "de":"Bitte wählen Sie ihr Modell:",
+              "fr":"Veuillez sélectionner le modèle de votre produit:",
+              "it":"Seleziona il modello del tuo prodotto:",
+              "es":"Por favor, seleccione el modelo de su producto:",
+              "pt":"Por favor, selecione o modelo:",
+              "cs":"Vyberte model svého produktu:" 
+           },
+            "selectamodel":{
+              "en":"Select a model",
+              "de":"Wählen Sie ein Modell",
+              "fr":"Sélectionnez un modèle",
+              "it":"Seleziona un modello",
+              "es":"Seleccione un modelo",
+              "pt":"Selecione um modelo",
+              "cs":"Vyberte model" 
+           },
+            "productserial":{
+              "en":"Please enter your product's serial number:",
+              "de":"Bitte geben Sie die Seriennummer Ihres Produkts ein:",
+              "fr":"Veuillez saisir le numéro de série de votre produit:",
+              "it":"Inserisci il numero di serie del tuo prodotto:",
+              "es":"Por favor, introduzca el número de serie de su producto:",
+              "pt":"Por favor, insira o número de série do seu produto:",
+              "cs":"Zadejte sériové číslo svého produktu:" 
+           },
+            "productimage":{
+              "en":"Here is the image of your product:",
+              "de":"Hier ist das Bild Ihres Produkts:",
+              "fr":"Voici l'image de votre produit:",
+              "it":"Ecco l'immagine del tuo prodotto:",
+              "es":"Aquí está la imagen de su producto:",
+              "pt":"Aqui está a imagem do seu produto:",
+              "cs":"Zde je obrázek vašeho produktu:" 
+           },
+            "isproduct":{
+              "en":"Is this your product?",
+              "de":"Ist das Ihr Produkt?",
+              "fr":"Est-ce votre produit? Oui ou Non ?",
+              "it":"È questo il tuo prodotto?",
+              "es":"¿Es este su producto?",
+              "pt":"É este o seu produto?",
+              "cs":"Je to váš produkt?" 
+           },
+            "describesyou":{
+              "en":"What describes you best?",
+              "de":"Was beschreibt dich am ehesten?",
+              "fr":"Qu'est-ce qui vous décrit le mieux?",
+              "it":"Cosa ti descrive meglio?",
+              "es":"¿Qué te describe mejor?",
+              "pt":"O que melhor descreve-o?",
+              "cs":"Co vás nejlépe popisuje?" 
+           },
+            "purchasedproduct":{
+              "en":"I purchased the product in a store",
+              "de":"Ich habe das Produkt in einem Geschäft gekauft",
+              "fr":"J'ai acheté le produit dans un magasin",
+              "it":"Ho acquistato il prodotto in un negozio",
+              "es":"Compré el producto en una tienda",
+              "pt":"Eu comprei o produto em uma loja",
+              "cs":"Koupil jsem produkt v obchodě" 
+           },
+            "productinstore":{
+              "en":"I have the recalled product in my store",
+              "de":"Ich habe das zurückgerufene Produkt in meinem Geschäft",
+              "fr":"J'ai le produit rappelé dans mon magasin",
+              "it":"Ho il prodotto richiamato nel mio negozio",
+              "es":"Tengo el producto retirado en mi tienda",
+              "pt":"Eu tenho o recall produto na minha loja",
+              "cs":"Mám svolávaný produkt v obchodě" 
+           },
+            "contactyourplace":{
+              "en":"Please contact your place of purchase as a first step or find a Bergamont dealer’s contact information. Any Bergamont dealer will handle your recall at his store free of cost.",
+              "de":"Bitte kontaktieren Sie als ersten Schritt Ihren Verkäufer oder finden Sie die Kontaktinformationen eines Bergamont-Händlers. Jeder Bergamont-Händler wird Ihren Rückruf in seinem Geschäft kostenlos abwickeln.",
+              "fr":"Veuillez d'abord contacter votre lieu d'achat ou trouver les coordonnées d'un revendeur Bergamont. Tous les revendeurs Bergamont traiteront votre rappel dans leur magasin gratuitement.",
+              "it":"Contatta il tuo luogo di acquisto come primo passo o trova le informazioni di contatto di un rivenditore Bergamont. Qualsiasi rivenditore Bergamont gestirà il tuo richiamo nella sua attività gratuitamente.",
+              "es":"Por favor, contacte con su lugar de compra como primer paso o encuentre la información de contacto de un distribuidor Bergamont. Cualquier distribuidor Bergamont gestionará su retirada en su tienda sin coste alguno.",
+              "pt":"Por favor, entre em contato com a loja onde fez a compra como primeiro passo ou encontre as informações de contato de um revendedor Bergamont. Qualquer revendedor Bergamont tratará do seu recall em sua loja sem custo.",
+              "cs":"Kontaktujte prosím vašeho prodejce, jako první možnost. Nebo najděte jiného prodejce Bergamont. Jakýkoli prodejce Bergamont vyřeší svolávací akci zdarma." 
+           },
+            "pleasefill":{
+              "en":"If you have any questions, please fill out our contact form.",
+              "de":"Wenn Sie Fragen haben, füllen Sie bitte unser Kontaktformular aus.",
+              "fr":"Si vous avez des questions, veuillez remplir notre formulaire de contact.",
+              "it":"Se hai domande, compila il nostro modulo di contatto.",
+              "es":"Si tiene alguna pregunta, complete nuestro formulario de contacto.",
+              "pt":"Se você tiver alguma dúvida, preencha nosso formulário de contacto.",
+              "cs":"Pokud máte nějaké dotazy, vyplňte prosím náš kontaktní formulář." 
+           },
+            "contactform":{
+              "en":"Contact form",
+              "de":"Kontaktformular",
+              "fr":"Formulaire de contact",
+              "it":"Modulo di contatto",
+              "es":"Formulario de contacto",
+              "pt":"Formulário de contacto",
+              "cs":"Kontaktní formulář" 
+           },
+            "dealerprotection":{
+              "en":"Please follow this link to start the recall process",
+              "de":"Bitte folgen Sie diesem Link, um den Rückrufprozess zu starten",
+              "fr":"Veuillez visiter l'adresse suivante pour vous inscrire au programme de protection des revendeurs",
+              "it":"Visita l'indirizzo seguente per registrarti al programma di protezione del rivenditore",
+              "es":"Visite la siguiente dirección para registrarse en el programa de protección para distribuidores",
+              "pt":"Por favor, visite o seguinte endereço para começar o processo de Recall.",
+              "cs":"Navštivte prosím následující adresu pro registraci do ochraného programu" 
+           },
+            "customerportallogin":{
+              "en":"Customer portal login",
+              "de":"Kundenportal-Login",
+              "fr":"Connexion au portail client",
+              "it":"Accesso al portale clienti",
+              "es":"Inicio de sesión en el portal del cliente",
+              "pt":"Login no portal do cliente",
+              "cs":"Přihlášení do portálu zákazníka" 
+           },
+            "findyourdealer":{
+              "en":"Find your dealer",
+              "de":"Finde deinen Händler",
+              "fr":"Trouvez votre revendeur",
+              "it":"Trova il tuo rivenditore",
+              "es":"Encuentra tu distribuidor",
+              "pt":"Encontre o seu revendedor",
+              "cs":"Najděte svého prodejce" 
+           },
+            "invalidserialnumber":{
+              "en":"Invalid serial number",
+              "de":"Ungültige Seriennummer",
+              "fr":"Numéro de série non valide",
+              "it":"Numero di serie non valido",
+              "es":"Número de serie no válido",
+              "pt":"Número de série inválido",
+              "cs":"Neplatné sériové číslo" 
+           },
+            "errorretrievingserialnumber":{
+              "en":"Error retrieving serial number",
+              "de":"Fehler beim Abrufen der Seriennummer",
+              "fr":"Erreur lors de la récupération du numéro de série",
+              "it":"Errore durante il recupero del numero di serie",
+              "es":"Error al recuperar el número de serie",
+              "pt":"Erro ao obter o número de série",
+              "cs":"Chyba při načítání sériového čísla" 
+           },
+            "productaffected":{
+              "en":"Your product is affected by a recall",
+              "de":"Ihr Produkt ist vom Rückruf betroffen",
+              "fr":"Votre produit est affecté par un rappel",
+              "it":"Il tuo prodotto è coinvolto dal richiamo",
+              "es":"Erreur lors de la récupération du numéro de série",
+              "pt":"O seu product é afetado pelo recall.",
+              "cs":"Vášeho produktu se týká svolávací akce" 
+           }
+        }

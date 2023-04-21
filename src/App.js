@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from 'axios';
 import "./css/App.css";
 import atob from 'atob'; // Importez la fonction 'atob' pour décoder les chaînes en base64
@@ -15,12 +15,18 @@ const serialData = serialNumbers;
 
 function App() {
   const [step, setStep] = useState(1); // commence à l'étape 2. Pour commence à l'étape 1, mettre 1
-  const [hasSerialNumber, setHasSerialNumber] = useState();
+  const [hasSerialNumber, setHasSerialNumber] = useState("");
   const [serialNumber, setSerialNumber] = useState("");
   const [selectedModel, setSelectedModel] = useState(null);
   const [isShopClient, setIsShopClient] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [imageUrl, setImageUrl] = useState('');
+  const [successMessage, setSuccessMessage] = useState(null);
+  const [materialName, setMaterialName] = useState("");
+  const [materialYear, setMaterialYear] = useState("");
+  const [materialSize, setMaterialSize] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+  const doItOnceAgainRef = useRef(0);
+
   
 
   const endpoint = 'https://webservices.scott-sports-test.com/scottwebservices/rest/asset';
@@ -46,6 +52,7 @@ function App() {
 
   const handleBackButton = () => { 
     setErrorMessage(null);
+    setSuccessMessage(null);
     if (step > 1) {
       setStep(step - 1);
       window.history.pushState(null, "", `#${step}`);
@@ -55,8 +62,8 @@ function App() {
     }
   };
   const resetErrorMessage = () => {
-    console.log("resetErrorMessage");
     setErrorMessage(null);
+    setSuccessMessage(null);
   };
   useEffect(() => {
     const handlePopState = (event) => {
@@ -82,65 +89,78 @@ function App() {
           'Authorization': `Basic ${tokenSap}`,
         },
       });
+      
       const material = response.data.EQUIPMENT.MATERIAL;
-      return material;
+      const materialName = response.data.EQUIPMENT.MATERIALNAME;
+      const materialYear = response.data.EQUIPMENT.MATERIALYEAR;
+      const materialSize = response.data.EQUIPMENT.SIZENAME;
+      return {material, materialName, materialYear, materialSize};
     } catch (error) {
       console.error(error);
       return null;
     }
   };
-  const getProductImage = async (event) => {
-    
-    if (hasSerialNumber) {
-      const material = await getEquipmentMaterial(serialNumber);
-      const serial = await checkSerialNumber(serialNumber);
-      console.log(serial);
+  const fetchImage = async (id) => {
+  try {
+    const response = await axios.get(`${endpoint}/${id}/500`, {
+      responseType: 'blob', // Spécifier le type de réponse en tant que blob (pour les images)
+      headers: {
+        'Authorization': `Basic ${tokenScott}`,
+      },
+    });
+    const imageUrl = URL.createObjectURL(response.data);
+    setImageUrl(imageUrl);
+    setStep(3);
+    window.history.pushState(null, "", `#${step}`);
+  } catch (error) {
+    console.error(error);
+  }
+};
+const getProductImage = async (event) => {
+  if (hasSerialNumber) {
+    const serial = await checkSerialNumber(serialNumber);
+    try {
+      const result = await getEquipmentMaterial(serialNumber);
+      const { material, materialName, materialYear, materialSize } = result;
+      setMaterialYear(materialYear);
+      setMaterialSize(materialSize);
+      setMaterialName(materialName);
       if (material && serial) {
-        console.log(tokenScott);
-        axios.get(`${endpoint}/${material}/500`, {
-          responseType: 'blob', // Spécifier le type de réponse en tant que blob (pour les images)
-          headers: {
-            'Authorization': `Basic ${tokenScott}`,
-          },
-        })
-        .then(response => {
-          const imageUrl = URL.createObjectURL(response.data);
-          setImageUrl(imageUrl);
-          setStep(3);
-          window.history.pushState(null, "", `#${step}`);
-        })
-        .catch(error => {
-          console.error(error);
-        });
-      } else if (!serial) {
-        setErrorMessage("Numéro de série non valide.");
-      } else if (!material) {
-        setErrorMessage("Erreur lors de la récupération du numéro de série.");
-      } 
-    } else {
-      axios.get(`${endpoint}/${selectedModel}/500`, {
-        responseType: 'blob', // Spécifier le type de réponse en tant que blob (pour les images)
-        headers: {
-          'Authorization': `Basic ${tokenScott}`,
-        },
-      })
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-        setImageUrl(imageUrl);
-        setStep(3);
-        window.history.pushState(null, "", `#${step}`);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+        fetchImage(material);
+        setErrorMessage(null); // reset error
+        setSuccessMessage(null);
+      } else {
+        setSuccessMessage("Your product is not affected");
+      }
+      console.log(material + " / " + materialName + " / " + materialYear + " / " + materialSize);
+    } catch (error) {
+      console.error(error.message);
+      console.log(doItOnceAgainRef.current);
+      if (doItOnceAgainRef.current < 3) {
+        console.error("Erreur détectée, nouvelle tentative...");
+        setErrorMessage("We will try to retrieve the product image. Please wait.");
+        doItOnceAgainRef.current += 1;
+        setTimeout(() => {
+          getProductImage();
+        }, doItOnceAgainRef.current * 1000);
+      } else {
+        console.error("Error retrieving serial number");
+        setErrorMessage("Error retrieving serial number");
+      }
     }
-  };
+  } else {
+    fetchImage(selectedModel);
+  }
+};
 
   const resetSteps = () => {
     setStep(1); // reset et recommence à l'étape 2. Pour commence à l'étape 1, mettre 1
     window.history.pushState(null, "", `#${step}`);
     setHasSerialNumber(null);
     setSerialNumber("");
+    setMaterialName("");
+    setMaterialYear("");
+    setMaterialSize("");
     setSelectedModel(null);
     resetErrorMessage();
     setIsShopClient(null);
@@ -152,7 +172,8 @@ function App() {
       <div className="col-xs-12">
       <h1>Recall Application</h1>
       <div className="recall_steps">
-        {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
+        {errorMessage && <div className="alert alert-danger"><i className="fas fa-exclamation-triangle"></i>{" "}{errorMessage}</div>}
+        {successMessage && <div className="alert alert-success"><i className="fas fa-check-circle"></i>{" "}{successMessage}</div>}
         {step === 1 && (
           <Step1 setHasSerialNumber={setHasSerialNumber} setStep={setStep} step={step}/>
         )}
@@ -163,7 +184,7 @@ function App() {
           <Step2woSerial selectedModel={selectedModel} setSelectedModel={setSelectedModel} getProductImage={getProductImage} handleBackButton={handleBackButton} />
         )}
         {step === 3 && (
-        <Step3 imageUrl={imageUrl} selectedModel={selectedModel} step={step} setStep={setStep} resetSteps={resetSteps} handleBackButton={handleBackButton}  />
+        <Step3 serialNumber={serialNumber} imageUrl={imageUrl} selectedModel={selectedModel} step={step} setStep={setStep} resetSteps={resetSteps} handleBackButton={handleBackButton} materialName={materialName} materialSize={materialSize} materialYear={materialYear}  />
         )}
         {step === 4 && (
           <Step4 setIsShopClient={setIsShopClient} step={step} setStep={setStep} handleBackButton={handleBackButton} />

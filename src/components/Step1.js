@@ -1,6 +1,4 @@
 import { getTranslation } from "../utils/i18n";
-// import image
-import QRCODEimage from "../images/QRCODE-SERIALNUMBER_BGM_Fender.png";
 
 const Step1 = ({ setHasSerialNumber, setStep, step }) => {
   return (
@@ -33,34 +31,34 @@ const Step1 = ({ setHasSerialNumber, setStep, step }) => {
       </button>
       <br />
       <div>
-        <a href="#" data-toggle="modal" data-target="#myModal">
+        <button className="btn btn-link" data-toggle="modal" data-target="#serialLocationModal">
           {getTranslation(
             "serialLocation",
             "Where is my frame number located?"
           )}
-        </a>
+        </button>
       </div>
       <div
-        class="modal fade"
-        id="myModal"
-        tabindex="-1"
+        className="modal fade"
+        id="serialLocationModal"
+        tabIndex="-1"
         role="dialog"
         aria-labelledby="myModalLabel"
       >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
+        <div className="modal-dialog modal-lg" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <img src={QRCODEimage} alt="QR Code" />
+            <div className="modal-body">
+              <img src="https://assets.bergamont.com/pages/recall/recall-serial-number.png" alt="QR Code" />
             </div>
           </div>
         </div>
