@@ -68,6 +68,8 @@ function App() {
   useEffect(() => {
     const handlePopState = (event) => {
       event.preventDefault();
+      setStep(step - 1);
+      handleBackButton();
     };
 
     window.addEventListener("popstate", handlePopState);
