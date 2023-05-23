@@ -11,7 +11,8 @@ const Step3 = ({
   handleBackButton,
   materialName,
   materialSize,
-  materialYear
+  materialYear,
+  isLoading
 }) => {
   const SAPCode = "";
   return (

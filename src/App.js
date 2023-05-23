@@ -26,10 +26,12 @@ function App() {
   const [materialSize, setMaterialSize] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const doItOnceAgainRef = useRef(0);
+  const [isLoading, setIsLoading] = useState(false);
+
 
   
 
-  const endpoint = 'https://webservices.scott-sports-test.com/scottwebservices/rest/asset';
+  const endpoint = 'https://webservices.scott-sports.com/scottwebservices/rest/asset';
 
 
   const usernameScott = process.env.REACT_APP_USERNAMESCOTT;
@@ -112,6 +114,7 @@ function App() {
     });
     const imageUrl = URL.createObjectURL(response.data);
     setImageUrl(imageUrl);
+    setIsLoading(false);
     setStep(3);
     window.history.pushState(null, "", `#${step}`);
   } catch (error) {
@@ -119,6 +122,8 @@ function App() {
   }
 };
 const getProductImage = async (event) => {
+  console.log("getProductImage");
+  setIsLoading(true);
   if (hasSerialNumber) {
     const serial = await checkSerialNumber(serialNumber);
     try {
@@ -148,6 +153,7 @@ const getProductImage = async (event) => {
       } else {
         console.error("Error retrieving serial number");
         setErrorMessage("Error retrieving serial number");
+        setIsLoading(false);
       }
     }
   } else {
@@ -173,6 +179,11 @@ const getProductImage = async (event) => {
       <div className="row">
       <div className="col-xs-12">
       <h1>Recall Application</h1>
+      {isLoading ? (
+          <div className="preloader">
+            <div className="spinner">loading...</div>
+          </div>
+        ) : (
       <div className="recall_steps">
         {errorMessage && <div className="alert alert-danger"><i className="fas fa-exclamation-triangle"></i>{" "}{errorMessage}</div>}
         {successMessage && <div className="alert alert-success"><i className="fas fa-check-circle"></i>{" "}{successMessage}</div>}
@@ -198,6 +209,7 @@ const getProductImage = async (event) => {
           <Step5customer handleBackButton={handleBackButton} />
         )}
     </div>
+    )}
     </div>
     </div>
     </div>
