@@ -18,37 +18,10 @@ const Step5customer = ({ handleBackButton }) => {
         {getTranslation(
           "pleasefill",
           "If you have any questions, please fill out our contact form."
-        )}{" "}<br />
-        <a href="#email" data-toggle="modal" data-target="#contactModal">
+        )}{" "}
+        <br/><a href="/company/contact?type=recall" target="_blank">
           {getTranslation("contactform", "Contact form")}
         </a>
-      <div>
-      </div>
-      <div
-        className="modal fade"
-        id="contactModal"
-        tabIndex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel"
-      >
-        <div className="modal-dialog modal-sm" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body">
-               Email : <a href="mailto:recall@bergamont.de" target="_blank">recall@bergamont.de</a>
-            </div>
-          </div>
-        </div>
-      </div>
       </p>
       <br />
       <br />
