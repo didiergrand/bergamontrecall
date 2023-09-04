@@ -31,7 +31,7 @@ function App() {
 
   
 
-  const endpoint = 'https://webservices.scott-sports.com/scottwebservices/rest/asset';
+  const endpoint = 'https://api.scott-sports.com/scottwebservices/rest/asset';
 
 
   const usernameScott = process.env.REACT_APP_USERNAMESCOTT;
