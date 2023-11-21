@@ -233,5 +233,14 @@
               "es":"Erreur lors de la récupération du numéro de série",
               "pt":"O seu product é afetado pelo recall.",
               "cs":"Vášeho produktu se týká svolávací akce" 
+           },
+           "productnotaffected":{
+               "en":"Your product is not affected",
+               "de":"Ihr Produkt ist nicht betroffen",
+               "fr":"Votre produit n'est pas affecté",
+               "it":"Il tuo prodotto non è coinvolto",
+               "es":"Su producto no está afectado",
+               "pt":"O seu produto não é afetado",
+               "cs":"Váš produkt není postižen"
            }
         }

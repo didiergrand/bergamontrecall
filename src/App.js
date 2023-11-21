@@ -10,6 +10,8 @@ import Step3 from "./components/Step3";
 import Step4 from "./components/Step4";
 import Step5dealer from "./components/Step5dealer";
 import Step5customer from "./components/Step5customer";
+import { getTranslation } from "./utils/i18n";
+
 
 const serialData = serialNumbers;
 
@@ -137,14 +139,15 @@ const getProductImage = async (event) => {
         setErrorMessage(null); // reset error
         setSuccessMessage(null);
       } else {
-        setSuccessMessage("Your product is not affected");
+        setSuccessMessage(getTranslation("productnotaffected", "Your product is not affected by a recall"));
+        setIsLoading(false);
+        return;
       }
       console.log(material + " / " + materialName + " / " + materialYear + " / " + materialSize);
     } catch (error) {
       console.error(error.message);
       console.log(doItOnceAgainRef.current);
       if (doItOnceAgainRef.current < 3) {
-        console.error("Erreur détectée, nouvelle tentative...");
         setErrorMessage("We will try to retrieve the product image. Please wait.");
         doItOnceAgainRef.current += 1;
         setTimeout(() => {
